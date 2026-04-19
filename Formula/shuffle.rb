@@ -6,6 +6,11 @@ class Shuffle < Formula
   license "MIT"
   head "https://github.com/ddnn55/shuffle.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/ddnn55/homebrew-tap/releases/download/shuffle-0.1.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "457d2262b18100a855da81d31acb17bfb1bb3b24ae739622a1e0f4c7e6d1f153"
+  end
+
   depends_on "rust" => :build
   depends_on :macos
 
